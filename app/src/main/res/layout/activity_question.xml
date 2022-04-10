@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuestionActivity">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:maxLines="5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/tvOption1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvOption1"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:scaleY="2"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProgress"
+        app:layout_constraintStart_toStartOf="@+id/tvQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/tvQuestion"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/tvOption1"
+        style="@style/questionOption"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/options_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+    <TextView
+        android:id="@+id/tvOption2"
+        style="@style/questionOption"
+        android:background="@drawable/options_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOption1" />
+
+    <TextView
+        android:id="@+id/tvOption3"
+        style="@style/questionOption"
+        android:background="@drawable/options_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOption2" />
+
+    <TextView
+        android:id="@+id/tvOption4"
+        style="@style/questionOption"
+        android:background="@drawable/options_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOption3" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Submit"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOption4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvOption4"
+        app:layout_constraintTop_toBottomOf="@+id/tvOption4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

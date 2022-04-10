@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="name">Name</string>
+    <string name="welcome">Welcome !</string>
+    <string name="enter_name">Please Enter Your Name</string>
+    <string name="next">Next</string>
+    <string name="enterName_error">Enter Name</string>
+    <string name="your_score">Your Score is</string>
+    <string name="finish">Finish</string>
+</resources>
